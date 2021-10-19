@@ -7,7 +7,7 @@
     <style>
         body
         {
-            background-color: silver;
+            background-image: url(./science-4989678\ \(1\).png);
         }
         .QNA
         {
@@ -16,29 +16,54 @@
         }
         .Q
         {
-            background-color: silver;
+            background-color: rgb(255,255,255,0);
             color: black;
-        }
-        .Back
-        {
-            border-radius: 4px;
-            background-color: #0bddec;
-            border: none;
-            color: #384136;
-            text-align: center;
-            font-size: 28px;
-            padding: 20px;
-            width: 100px;
-            height: 20px;
-            cursor: pointer;
         }
         .A
         {
-            background-color: skyblue;
+            background-color:rgb(255,255,255,0);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #0bddec;
         }
 
     </style>
-        <center><a class = "Back" href="./index.html">뒤로가기</a></center>
+    <ul>
+        <li><a class="active" href="./admin_call.html">관리자</a></li>
+        <li><a href="./QNA.html">QNA</a></li>
+        <li><a href="https://roblox.com/games/7343626820/Raid">게임</a></li>
+        <li><a href="https://discord.gg/XvGvBsYDcw">개발자신청</a></li>
+        <li><a href="">RTG공식사이트</a></li>
+    </ul>
         <center><h1 class = "QNA">QNA</h1></center>
         <center class = "Q"><p>Q:RTG는뭐하는곳인가요?</p></center>
         <center class = "A"><p>A:우리는 게임을 게발하는사람들입니다</p></center>
