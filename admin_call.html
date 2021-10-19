@@ -30,24 +30,52 @@
     <style>
         body
         {
-         background-color: skyblue;
+        background-image: url(./science-4989678\ \(1\).png);
+        margin: 0;
+        padding: 0;
         }
-        .Back
-        {
-            border-radius: 4px;
-            background-color: #0bddec;
-            border: none;
-            color: #384136;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
             text-align: center;
-            font-size: 28px;
-            padding: 20px;
-            width: 100px;
-            height: 20px;
-            cursor: pointer;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #0bddec;
+        }
         }
     </style>
+    <ul>
+        <li><a class="active" href="./admin_call.html">관리자</a></li>
+        <li><a href="./QNA.html">QNA</a></li>
+        <li><a href="https://roblox.com/games/7343626820/Raid">게임</a></li>
+        <li><a href="https://discord.gg/XvGvBsYDcw">개발자신청</a></li>
+        <li><a href="./index.html">RTG공식사이트</a></li>
+    </ul>
     <h1>안녕하세요 이메일과 하고싶으신 말씀을 적어 주시고 이름도 함깨 기입해 주세요.</h1>
-    <center><a class = "Back" href="./index.html">뒤로가기</a></center>
     <form id="contact-form">
         <input type="hidden" name="contact_number">
         <label>Name</label>
