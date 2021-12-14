@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>RTG wed site</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js%22%3E"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_biWKlbbM6ODmQZGhVnhbr');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_qgsxq4a', 'template_s5r6h1l', this)
+                    .then(function() {
+                        console.log('보내기에 성공 하였습니다!')
+                    }, function(error) {
+                        console.log('보내기에 실패하였습니다.', error);
+                    });
+            });
+        }
+        
+    </script>
+<body>
+    <style>
+            body 
+            {
+                background-color: white;
+                background-image: url(./stones-6660734_1920.jpg);
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
+
+
+            .explain 
+            {
+                font-size: 20px;
+                background: linear-gradient(to right top, rgb(231, 6, 6), #e5ff00);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+
+
+            ul 
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(255,255,255,0);
+                position: fixed;
+                top: 0;
+                
+            }
+
+
+            ul:after
+            {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+        
+            li 
+            {
+                float: left;
+            }
+
+
+            li a 
+            {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: #82f388;
+            }
+
+
+            li a:hover:not(.active) 
+            {
+                background-color: rgb(255,255,255,0);
+            }
+
+
+            .home 
+            {
+                background-color: rgba(255,255,255,0);
+            }
+            .dd
+            {
+                font-size: 100px;
+                background: linear-gradient(to right top, rgb(18, 223, 206), #82f388);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+    
+        
+               
+    </style>
+    <ul>
+	    <li><a class="home" href="./index.htm">RTG공식사이트</a></li>
+        <li><a href="./QNA.htm">QNA</a></li>
+	    <li><a href="./admin_call.htm">관리자</a></li>
+	    <li><a href="https://roblox.com/games/7343626820/Raid">게임</a></li>
+	    <li><a href="https://discord.gg/XvGvBsYDcw">개발자신청</a></li>
+    </ul>
+    <center><h1 class = "dd">RTG</h1></center>
+    <center><p class="explain">저희는 다양한개발을 하고있는 사람들입니다</p></center>
+    <center>
+        <p class=" explain">일단 이 서버의 궁극적인 목표는 이윤창출이며 게임을 만들어서<br>그 게임에서 레이드할 사람을 모집하고<br>그 레이드 하는 과정을 방송으로 내보내는것을 목적으로 하는 팀입니다.<br></p>
+        
+    </body>
+</html>
