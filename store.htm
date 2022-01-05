@@ -7,7 +7,115 @@
 </head>
 <body>
     <style>
+        title
+            {           
+            font-size: 50px;
+            color: beige;
+            }
+        body
+            {
+                background-image: url(./teia_ai.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-y: unset;
+
+            } 
+        ul 
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(255,255,255,0);
+                position: fixed;
+                top: 0;
+                
+            }
+
+
+        ul:after
+            {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
         
+        li 
+            {
+                float: left;
+            }
+
+
+        li a 
+            {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: #82f388;
+            }
+
+
+            li a:hover:not(.active) 
+            {
+                background-color: rgb(255,255,255,0);
+            }
+            button{
+                background:#1AAB8A;
+                color:#fff;
+                border:none;
+                position:relative;
+                height:60px;
+                font-size:1.6em;
+                padding:0 2em;
+                cursor:pointer;
+                transition:800ms ease all;
+                outline:none;
+                width: 400px;
+              }
+              button:hover{
+                background:#fff;
+                color:#1AAB8A;
+              }
+              button:before,button:after{
+                content:'';
+                position:absolute;
+                top:0;
+                right:0;
+                height:2px;
+                width: 0px;;
+                background: #1AAB8A;
+                transition:400ms ease all;
+              }
+              button:after{
+                right:inherit;
+                top:inherit;
+                left:0;
+                bottom:0;
+              }
+              button:hover:before,button:hover:after{
+                width:100%;
+                transition:800ms ease all;
+              }
+              
+              
+ 
     </style>
+    <ul>
+	    <li><a class="home" href="./index.htm">Teia_AI</a></li>
+        <li><a href="./store.htm">store</a></li>
+    </ul>
+    <center><h1 class = "title">store</h1></center><br>
+    <center><button onclick="">first product</button></center><br>
+    <center><button onclick="">second product</button></center><br>
+    <center><button onclick="">third product</button></center><br>
+    <center><button onclick="">fourth product</button></center><br>
+    <center><button onclick="">fifth product</button></center><br>
+    <script>
+        function download(download){
+                document.getElementById()
+        }
+    </script>
 </body>
 </html>

@@ -77,13 +77,59 @@
                 color: transparent;
                 -webkit-background-clip: text
 
-            }           
+            }        
+            button{
+                background:#1AAB8A;
+                color:#fff;
+                border:none;
+                position:relative;
+                height:60px;
+                font-size:1.6em;
+                padding:0 2em;
+                cursor:pointer;
+                transition:800ms ease all;
+                outline:none;
+              }
+              button:hover{
+                background:#fff;
+                color:#1AAB8A;
+              }
+              button:before,button:after{
+                content:'';
+                position:absolute;
+                top:0;
+                right:0;
+                height:2px;
+                width:0;
+                background: #1AAB8A;
+                transition:400ms ease all;
+              }
+              button:after{
+                right:inherit;
+                top:inherit;
+                left:0;
+                bottom:0;
+              }
+              button:hover:before,button:hover:after{
+                width:100%;
+                transition:800ms ease all;
+              }
+              .team_explain
+              {
+                font-size: xx-large;
+                background: linear-gradient(to right top, rgb(0, 183, 255), #ff0000);
+                color: transparent;
+                -webkit-background-clip: text
+              }
+              
+                 
     </style>
     <ul>
 	    <li><a class="home" href="./index.htm">Teia_AI</a></li>
         <li><a href="./store.htm">store</a></li>
-        <li><a href="login.htm">login</a></li>
     </ul>
     <center><h1 class = "gradation">TEIA.AI</h1></center>
+    <center><p class = "team_explain">안녕하세요 teia.ai는 google이 제공하는 tensorflow를 통해서 Ai를 만드는 팀입니다</p></center>
+    <center><button onclick="location.href='./store.htm'">download now!</button></center>
     </body>
 </html>
