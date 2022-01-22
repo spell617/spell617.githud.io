@@ -4,9 +4,29 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Teia_AI</title>
-        <script src="./script/script.js">
+        <script src="./script/script.js"></script>
+        <script>
+            (function () {
+              function resp() {
+              var arrUserIP = ['114.204.63.131'];  // 차단할 아이피 입력
+              var json = JSON.parse(this.responseText);
+              for (var i = 0; i < arrUserIP.length; i++) {
+                if (arrUserIP[i] == json.ip) {
+                  // 차단할 아이피 접속 시 보여줄 메시지(특정 주소로만 보내려면 아래 줄 삭제)
+                  alert("현욱아 ㅎ 꺼저.")
+                  // 다른 곳으로 보낼 URL주소 입력
+                  window.location.replace("https://tenor.com/view/half-seoul-korean-slang-gif-10407686");
+                }
+              }
+            }
+            
+            var request = new XMLHttpRequest();
+            request.addEventListener("load", resp);
+            request.open("GET", 'https://api.ipify.org?format=json');
+            request.send();
+            }());
+            </script>
 
-        </script>
     <style>
             body 
             {
@@ -107,7 +127,8 @@
                 background: #1AAB8A;
                 transition:400ms ease all;
               }
-              button:after{
+              button:after
+              {
                 right:inherit;
                 top:inherit;
                 left:0;
